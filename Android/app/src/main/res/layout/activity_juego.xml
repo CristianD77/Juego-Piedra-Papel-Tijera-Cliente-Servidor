@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Piedra, Papel o Tijera"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#6C63FF"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nickname"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmarNick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar nickname"
+        android:backgroundTint="#6C63FF"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnPiedra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Piedra"
+            android:enabled="false"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnPapel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Papel"
+            android:enabled="false"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnTijera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tijera"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnJugarNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jugar otra vez"
+        android:backgroundTint="#1D9E75"
+        android:enabled="false"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnVolverMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="← Volver al menú"
+        android:backgroundTint="#888888"/>
+
+</LinearLayout>
